@@ -1,0 +1,31 @@
+{
+  "totalDocuments": 4,
+  "totalWords": 49,
+  "uniqueWords": 31,
+  "vocabularyDensity": 0.6326530612244898,
+  "readabilityIndex": 43.27346938775511,
+  "wordsPerSentence": 49.0,
+  "frequentWords": [
+    {
+      "word": "decree",
+      "count": 4
+    },
+    {
+      "word": "effect",
+      "count": 2
+    },
+    {
+      "word": "date",
+      "count": 2
+    },
+    {
+      "word": "signature",
+      "count": 2
+    },
+    {
+      "word": "appointed",
+      "count": 2
+    }
+  ],
+  "created": "2025-07-17 19:46:11"
+}

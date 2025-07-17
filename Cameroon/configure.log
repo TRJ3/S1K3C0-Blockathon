@@ -1,0 +1,41 @@
+Using address 0x4cF0A8976397e450bA0a0846540707DA87212E17 as consumer if we connect to remote providers.
+========== Fetching input assets ============
+========
+Processing input 0 (did:op:204e60c2a0f935d68743955afe1b4bb965770cfbc70342520d6bcecf75befe9c)
+Downloading...
+DDO saved to /data/ddos/did:op:204e60c2a0f935d68743955afe1b4bb965770cfbc70342520d6bcecf75befe9c
+https://provider.angliru.udl.cat//api/services/fileinfo
+[
+  {
+    contentLength: '4084',
+    contentType: 'application/json',
+    filename: 'data',
+    index: 0,
+    type: 'url',
+    valid: true
+  }
+]
+Trying to download https://provider.angliru.udl.cat/api/services/download?fileIndex=0&documentId=did:op:204e60c2a0f935d68743955afe1b4bb965770cfbc70342520d6bcecf75befe9c&transferTxId=0xa57d9ac51149ff3da26fb8180737ffa3d6f93c38bd8142fd315255ef1878c4b1&serviceId=f1599ed6c10106172795669289ba6bd22b699d16463ee9c86e816649332bf725&consumerAddress=0x4cF0A8976397e450bA0a0846540707DA87212E17&nonce=1752781533830&signature=0x0c2f3427ef8d66048d81c5e49b066f47047cfd34a9a8abc57e0f45cb3c5175371c970bc7f5fbf485ee54d9d4d00df434e1c211f5fcda1e5586274ccf5f7de9991bto /data/inputs/204e60c2a0f935d68743955afe1b4bb965770cfbc70342520d6bcecf75befe9c/0
+Downloading to /data/inputs/204e60c2a0f935d68743955afe1b4bb965770cfbc70342520d6bcecf75befe9c/0
+Downloaded OK
+========== Done with inputs, moving to algo ============
+AlgoCustomData saved to /data/inputs/algoCustomData.json
+Downloading...
+DDO saved to /data/ddos/did:op:81d57f431deebbd2e74561eac4875da42276afa3cbcf910d27ee8b2425193b0f
+https://provider.angliru.udl.cat//api/services/fileinfo
+[
+  {
+    contentLength: '825',
+    contentType: 'text/plain',
+    filename: 'main.py',
+    index: 0,
+    type: 'url',
+    valid: true
+  }
+]
+Trying to download https://provider.angliru.udl.cat/api/services/download?fileIndex=0&documentId=did:op:81d57f431deebbd2e74561eac4875da42276afa3cbcf910d27ee8b2425193b0f&transferTxId=0xdbf77181aa38cf355f0a2f70663600ffb74c295c54aa4807756dfcaaae8c42ba&serviceId=ff76c24ed2e98eb719f7438c4fe6e118af5b2b142c636ddaaafe890876acc886&consumerAddress=0x4cF0A8976397e450bA0a0846540707DA87212E17&nonce=1752781538880&signature=0xc900d222a7c1bd31eefed06cca723cb15931872525632a5eff1f8cee4cc21e2a21bd60ce7ab1bbd0de299e8bb516be710f13a2460a0119f1517138ac659d26581bto /data/transformations/algorithm
+Downloading to /data/transformations/algorithm
+Downloaded OK
+============ Done , setting the status =============
+Updated 41079b7ab09d4cfeac1a52adf034e72c with status 30
+Finished!
