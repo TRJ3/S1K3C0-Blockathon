@@ -12,10 +12,12 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@deltadao/nautilus": "^1.1.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "ethers": "^5.7.2"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "prettier": "^3.0.3",
     "typescript": "^5.4.2"
   }

@@ -1,0 +1,33 @@
+{
+  "form": {
+    "success": "🎉 Your Compute job started. 🎉",
+    "error": "Compute job could not be started.",
+    "data": [
+      {
+        "name": "computeEnv",
+        "label": "Select a Compute Environment",
+        "type": "computeEnvSelection",
+        "options": [],
+        "sortOptions": true
+      },
+      {
+        "name": "algorithm",
+        "label": "Select an algorithm to start a compute job",
+        "type": "assetSelection",
+        "value": false,
+        "options": [],
+        "sortOptions": false
+      }
+    ],
+    "portalTermsAndConditions": {
+      "name": "portalTermsAndConditions",
+      "options": ["Portal Terms and Conditions"],
+      "prefixes": ["I agree to the"]
+    },
+    "assetTermsAndConditions": {
+      "name": "assetTermsAndConditions",
+      "prefixes": ["I acknowledge that the asset is made available under"],
+      "postfixes": ["license and agree to the terms"]
+    }
+  }
+}

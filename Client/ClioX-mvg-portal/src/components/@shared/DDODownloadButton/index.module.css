@@ -1,0 +1,26 @@
+.credential_margin_bottom {
+  margin-bottom: calc(var(--spacer) * var(--line-height));
+}
+.credential_input {
+  width: 70%;
+}
+
+.credential_input_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.button {
+  max-height: 70px;
+  background-color: var(--credential-button-background) !important;
+  border-color: var(--credential-button-border) !important;
+  color: var(--brand-white) !important;
+}
+
+.button:hover {
+  background-color: var(--color-highlight) !important;
+  border-color: var(--credential-button-border) !important;
+}

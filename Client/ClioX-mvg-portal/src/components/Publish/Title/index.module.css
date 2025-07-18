@@ -1,0 +1,23 @@
+.network {
+  color: #6b7280;
+  margin-left: calc(var(--spacer) / 3);
+  font-size: 0.75em;
+}
+.network svg {
+  width: 1em;
+  height: 1em;
+  margin-top: -0.25em;
+  fill: currentColor;
+}
+.tooltip {
+  width: 0.5em;
+  height: 0.5em;
+  fill: var(--color-secondary);
+}
+.error {
+  fill: var(--brand-alert-red);
+  color: var(--brand-alert-red);
+}
+.infoIcon {
+  composes: infoIcon from '../Actions/index.module.css';
+}
