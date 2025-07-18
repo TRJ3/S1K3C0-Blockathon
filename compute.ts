@@ -1,4 +1,7 @@
 import { Nautilus } from '@deltadao/nautilus'
+import * as fs from 'fs'
+import * as path from 'path'
+import { parse } from 'csv-parse'
 
 export async function compute(nautilus: Nautilus, datasetDid?: string, algoDid?: string) {
   const dataset = {
@@ -44,4 +47,31 @@ export async function retrieveComputeResult(
     providerUri
   })
   console.log('Compute Result URL: ', computeResult)
+}
+
+// CSV 파일을 비동기로 읽고 파싱하는 함수
+export async function loadCsvData(filePath: string): Promise<any[]> {
+  return new Promise((resolve, reject) => {
+    const records: any[] = []
+    fs.createReadStream(filePath)
+      .pipe(parse({ columns: true, skip_empty_lines: true }))
+      .on('data', (row) => records.push(row))
+      .on('end', () => resolve(records))
+      .on('error', (err) => reject(err))
+  })
+}
+
+// 예시: 두 CSV 파일을 읽어 출력하는 함수
+export async function printLocalCsvSamples() {
+  const baseDir = path.resolve(__dirname, '..')
+  const exampleDataPath = path.join(baseDir, 'example-data.csv')
+  const dateDistPath = path.join(baseDir, 'date_distribution.csv')
+  try {
+    const exampleData = await loadCsvData(exampleDataPath)
+    const dateDist = await loadCsvData(dateDistPath)
+    console.log('example-data.csv 샘플:', exampleData.slice(0, 3))
+    console.log('date_distribution.csv 샘플:', dateDist)
+  } catch (err) {
+    console.error('CSV 파일 읽기 오류:', err)
+  }
 }
